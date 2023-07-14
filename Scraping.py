@@ -81,7 +81,7 @@ class Scraping:
 
     def save_proxies(self, proxies):
         try:
-            with open('proxies.json', 'w') as file:
+            with open('/app/proxies.json', 'w') as file:
                 json.dump(proxies, file, indent=4)
         except Exception:
             raise Exception

@@ -8,4 +8,7 @@ RUN pip install --no-cache-dir -r requirements.txt
 COPY Scraping.py .
 COPY main.py .
 
+VOLUME /app
+
 CMD [ "python", "main.py" ]
+
